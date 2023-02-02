@@ -1,8 +1,9 @@
 const msalParams = {
     auth: {
         authority: "https://login.microsoftonline.com/consumers",
+       
         clientId: "1620a102-220d-45c2-a00d-fb0b1cb54fd6",
-        redirectUri: "https://one-drive-picker.netlify.app/"
+        redirectUri: "https://one-drive-picker-by-dheeraj.netlify.app/"
     },
 }
 

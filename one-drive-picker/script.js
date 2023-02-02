@@ -11,7 +11,7 @@
         },
         authentication: {},
         messaging: {
-          origin:  "https://one-drive-picker.netlify.app",
+          origin:  "https://one-drive-picker-by-dheeraj.netlify.app/",
           channelId: "27",
         },
         typesAndSources: {
