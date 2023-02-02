@@ -11,7 +11,7 @@
         },
         authentication: {},
         messaging: {
-          origin: "http://localhost:3000",
+          origin: "http://localhost:3000" || "https://one-drive-picker.netlify.app",
           channelId: "27",
         },
         typesAndSources: {
