@@ -1,0 +1,35 @@
+{% for user in users %}
+  {% if user.id is even %}
+    Name: {{ user.name }}
+    UserName: {{ user.username }}
+    Email: {{ user.email }}
+  {% else %}
+    I'm Odd
+  {% endif %}
+
+
+  Address: {{ user.address.street }}, {{ user.address.suite }}, {{ user.address.city }}, {{ user.address.zipcode }}, 
+  Geo: {{ user.address.geo.lat }}, {{ user.address.geo.lng }}
+
+
+
+  {% if user.email.endsWith('.biz') %}
+    Name: {{ user.name }}
+    Email: {{ user.email }}
+  {% endif %}
+
+  {% if user.address.city == "Aliyaview" or user.address.city == "Howemouth" or user.address.city == "Gwenborough" %}
+    The Zipcode and Geo of cityname {{ user.address.city }} is: {{ user.address.zipcode }} and 
+    {{ user.address.geo.lat }}, {{ user.address.geo.lng }}
+  {% endif %}
+
+
+  {% set catchPhrase = user.company.catchPhrase %}
+  {% if catchPhrase | length > 15 %}
+    CatchPhrase: {{ catchPhrase}}...
+  {% else %}
+    CatchPhrase: {{ catchPhrase }}
+  {% endif %}
+
+  
+{% endfor %}

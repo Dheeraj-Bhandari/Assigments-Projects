@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/ThankYou.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous"
+  />
+    <title>Thank You</title>
+</head>
+<body>
+    <div class="thankyou-Main">
+
+        <div class="img">
+            <img  class="logo" src="https://webengage.com/wp-content/uploads/2019/04/WebEngage-logo-1.png" alt="webenggae-logo">
+            <img class="phone" src="https://i.pinimg.com/736x/74/fe/f2/74fef23e2e02b874f883b8fbd3847cc8.jpg" alt="phone logo">
+
+        </div>
+        <h1>Thanks a ton for taking out your precious time and for completing the survey</h1>
+
+        <div >
+
+            <h4 class="email-h4"></h4>
+            <h4 class="mobile-h4"></h4>
+            
+        </div>
+
+    </div>
+    
+    <script>
+        if(localStorage.getItem("webengagaeEmail")===null ){
+            window.location.assign("../index.html")
+        }
+        document.querySelector(".email-h4").innerText = `Email Address - ${localStorage.getItem("webengagaeEmail")}`
+        document.querySelector(".mobile-h4").innerText = `Contact Number - ${localStorage.getItem("webengagaePhone")}`
+    </script>
+</body>
+</html>
