@@ -1,1 +1,1 @@
-export const Getapi =  `https://geektrust.s3.ap-southeast-1.amazonaws.com/coding-problems/shopping-cart/catalogue.json`
+export const Getapi =  `https://gocomet-assigment-backend-by-dheeraj.vercel.app/`
