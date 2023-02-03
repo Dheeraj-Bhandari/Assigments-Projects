@@ -145,3 +145,8 @@
     margin-top: 3rem;
 }
 /* clear-filter-btn End */
+
+a{
+    text-decoration: none;
+    color: black;
+}

@@ -3,6 +3,7 @@ import "./productListingCss.css";
 import { useProductContext } from "../context/product_Context";
 import { useFilterContext } from "../context/filter_Context";
 import { useCartContext } from "../context/cart.Context";
+import { Link } from "react-router-dom";
 
 const ProductListing = () => {
   const { isLoading } = useProductContext();
@@ -198,9 +199,11 @@ const ProductListing = () => {
           {filter_Products?.map((ele) => {
             return (
               <div className="Product-Card" key={ele.id}>
-                <img src={ele.imageURL} alt={ele.name} />
+                <Link to={`/products/${ele.id}`}>
+                <img src={ele.imageURL} alt={ele.name}  />
                 <h3 className="card-title ">{ele.name}</h3>
                 <p>Rs. {ele.price}</p>
+                </Link>
                 <button
                   type="button"
                   className="btn btn-success"
